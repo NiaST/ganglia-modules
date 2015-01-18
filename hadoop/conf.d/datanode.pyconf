@@ -1,0 +1,34 @@
+
+modules {
+    module {
+        name = "datanode"
+        language = "python"
+    }
+}
+
+collection_group {
+    collect_every = 30
+    time_threshold = 60
+	
+    metric {
+        name = "dn_dfs_blocks_read"
+        title = "Number of times that a block is read from the hard disk (blocks/s)"
+    }
+    metric {
+        name = "dn_dfs_blocks_removed"
+        title = "Number of removed or invalidated blocks on the DataNode. (blocks/s)"
+    }
+    metric {
+        name = "dn_dfs_blocks_replicated"
+        title = "Number of blocks transferred or replicated from one DataNode to another. (blocks/s)"
+    }
+    metric {
+        name = "dn_dfs_blocks_verified"
+        title = "Number of block verifications (blocks/s)"
+    }
+    metric {
+        name = "dn_dfs_blocks_written"
+        title = "Number of blocks written to disk (blocks/s)"
+    }
+
+}

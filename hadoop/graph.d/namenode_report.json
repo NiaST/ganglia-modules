@@ -1,0 +1,7 @@
+{
+   "report_name" : "namenode_report",
+   "report_type" : "standard",
+   "title" : "Namenode Capacity",
+   "vertical_label" : "bits",
+   "graphite" : "target=alias(scale(HOST_CLUSTER.nn_dfs_total_space.sum,1024)&target=alias(scale(HOST_CLUSTER.nn_dfs_used_space.sum,1024)&target=alias(scale(HOST_CLUSTER.nn_dfs_remaining_space.sum,1024)&areaMode=stacked&colorList=F38630,3333BB,33CC33"
+}

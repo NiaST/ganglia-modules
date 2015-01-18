@@ -1,0 +1,13 @@
+{
+   "report_name" : "datanode_report",
+   "report_type" : "standard",
+   "title" : "Datanode Blocks",
+   "vertical_label" : "blocks/s",
+   "series" : [
+      { "metric": "dn_dfs_blocks_read", "color": "F38630", "label": "Blocks Read", "line_width": "2", "type": "line" },
+      { "metric": "dn_dfs_blocks_removed", "color": "FF0000", "label": "Blocks Removed", "line_width": "2", "type": "line" },
+      { "metric": "dn_dfs_blocks_replicated", "color": "3333BB", "label": "Blocks Replicated", "line_width": "2", "type": "line" },
+      { "metric": "dn_dfs_blocks_verified", "color": "33CC33", "label": "Blocks Verified", "line_width": "2", "type": "line" },
+      { "metric": "dn_dfs_blocks_written", "color": "000000", "label": "Blocks Written", "line_width": "2", "type": "line" }
+   ]
+}

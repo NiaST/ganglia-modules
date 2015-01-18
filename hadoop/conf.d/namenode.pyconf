@@ -1,0 +1,38 @@
+
+modules {
+    module {
+        name = "namenode"
+        language = "python"
+    }
+}
+
+collection_group {
+    collect_every = 30
+    time_threshold = 60
+
+    metric {
+        name = "nn_dfs_total_space"
+        title = "Configured Capacity (bits)"
+    }
+    metric {
+        name = "nn_dfs_used_space"
+        title = "DFS Used Space (bits)"
+    }
+    metric {
+        name = "nn_dfs_remaining_space"
+        title = "DFS Remaining Space (bits)"
+    }
+    metric {
+        name = "nn_dfs_blocks_total"
+        title = "Total Blocks (blocks)"
+    }
+    metric {
+        name = "nn_dfs_blocks_capacity"
+        title = "Block Capacity (blocks)"
+    }
+    metric {
+        name = "nn_dfs_files_total"
+        title = "Total Files (blocks)"
+    }
+
+}
